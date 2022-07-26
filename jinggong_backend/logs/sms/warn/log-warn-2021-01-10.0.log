@@ -1,0 +1,21 @@
+2021-01-10 00:07:31 |WARN  |main |Logger.java:44 |org.mybatis.spring.mapper.ClassPathMapperScanner |No MyBatis mapper was found in '[com.bit.jinggong.service.*.mapper]' package. Please check your configuration.
+2021-01-10 00:07:32 |WARN  |main |URLConfigurationSource.java:121 |com.netflix.config.sources.URLConfigurationSource |No URLs will be polled as dynamic configuration sources.
+2021-01-10 00:07:32 |WARN  |main |URLConfigurationSource.java:121 |com.netflix.config.sources.URLConfigurationSource |No URLs will be polled as dynamic configuration sources.
+2021-01-10 00:14:07 |WARN  |main |Logger.java:44 |org.mybatis.spring.mapper.ClassPathMapperScanner |No MyBatis mapper was found in '[com.bit.jinggong.service.*.mapper]' package. Please check your configuration.
+2021-01-10 00:14:08 |WARN  |main |URLConfigurationSource.java:121 |com.netflix.config.sources.URLConfigurationSource |No URLs will be polled as dynamic configuration sources.
+2021-01-10 00:14:08 |WARN  |main |URLConfigurationSource.java:121 |com.netflix.config.sources.URLConfigurationSource |No URLs will be polled as dynamic configuration sources.
+2021-01-10 08:46:47 |WARN  |main |Logger.java:44 |org.mybatis.spring.mapper.ClassPathMapperScanner |No MyBatis mapper was found in '[com.bit.jinggong.service.*.mapper]' package. Please check your configuration.
+2021-01-10 08:46:48 |WARN  |main |URLConfigurationSource.java:121 |com.netflix.config.sources.URLConfigurationSource |No URLs will be polled as dynamic configuration sources.
+2021-01-10 08:46:48 |WARN  |main |URLConfigurationSource.java:121 |com.netflix.config.sources.URLConfigurationSource |No URLs will be polled as dynamic configuration sources.
+2021-01-10 08:49:55 |WARN  |main |Logger.java:44 |org.mybatis.spring.mapper.ClassPathMapperScanner |No MyBatis mapper was found in '[com.bit.jinggong.service.*.mapper]' package. Please check your configuration.
+2021-01-10 08:49:56 |WARN  |main |URLConfigurationSource.java:121 |com.netflix.config.sources.URLConfigurationSource |No URLs will be polled as dynamic configuration sources.
+2021-01-10 08:49:56 |WARN  |main |URLConfigurationSource.java:121 |com.netflix.config.sources.URLConfigurationSource |No URLs will be polled as dynamic configuration sources.
+2021-01-10 08:51:02 |WARN  |main |Logger.java:44 |org.mybatis.spring.mapper.ClassPathMapperScanner |No MyBatis mapper was found in '[com.bit.jinggong.service.*.mapper]' package. Please check your configuration.
+2021-01-10 08:51:03 |WARN  |main |URLConfigurationSource.java:121 |com.netflix.config.sources.URLConfigurationSource |No URLs will be polled as dynamic configuration sources.
+2021-01-10 08:51:03 |WARN  |main |URLConfigurationSource.java:121 |com.netflix.config.sources.URLConfigurationSource |No URLs will be polled as dynamic configuration sources.
+2021-01-10 08:56:30 |WARN  |main |Logger.java:44 |org.mybatis.spring.mapper.ClassPathMapperScanner |No MyBatis mapper was found in '[com.bit.jinggong.service.*.mapper]' package. Please check your configuration.
+2021-01-10 08:56:31 |WARN  |main |URLConfigurationSource.java:121 |com.netflix.config.sources.URLConfigurationSource |No URLs will be polled as dynamic configuration sources.
+2021-01-10 08:56:31 |WARN  |main |URLConfigurationSource.java:121 |com.netflix.config.sources.URLConfigurationSource |No URLs will be polled as dynamic configuration sources.
+2021-01-10 09:01:26 |WARN  |main |Logger.java:44 |org.mybatis.spring.mapper.ClassPathMapperScanner |No MyBatis mapper was found in '[com.bit.jinggong.service.*.mapper]' package. Please check your configuration.
+2021-01-10 09:01:27 |WARN  |main |URLConfigurationSource.java:121 |com.netflix.config.sources.URLConfigurationSource |No URLs will be polled as dynamic configuration sources.
+2021-01-10 09:01:27 |WARN  |main |URLConfigurationSource.java:121 |com.netflix.config.sources.URLConfigurationSource |No URLs will be polled as dynamic configuration sources.

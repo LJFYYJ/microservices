@@ -1,0 +1,14 @@
+2021-01-10 07:19:54 |ERROR |main |LoggingFailureAnalysisReporter.java:40 |org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter |
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8180 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8180 or configure this application to listen on another port.
+

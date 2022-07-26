@@ -1,0 +1,16 @@
+2021-01-16 03:41:18 |WARN  |main |URLConfigurationSource.java:121 |com.netflix.config.sources.URLConfigurationSource |No URLs will be polled as dynamic configuration sources.
+2021-01-16 03:41:18 |WARN  |main |URLConfigurationSource.java:121 |com.netflix.config.sources.URLConfigurationSource |No URLs will be polled as dynamic configuration sources.
+2021-01-16 11:40:38 |WARN  |main |URLConfigurationSource.java:121 |com.netflix.config.sources.URLConfigurationSource |No URLs will be polled as dynamic configuration sources.
+2021-01-16 11:40:38 |WARN  |main |URLConfigurationSource.java:121 |com.netflix.config.sources.URLConfigurationSource |No URLs will be polled as dynamic configuration sources.
+2021-01-16 11:41:11 |WARN  |main |URLConfigurationSource.java:121 |com.netflix.config.sources.URLConfigurationSource |No URLs will be polled as dynamic configuration sources.
+2021-01-16 11:41:11 |WARN  |main |URLConfigurationSource.java:121 |com.netflix.config.sources.URLConfigurationSource |No URLs will be polled as dynamic configuration sources.
+2021-01-16 11:45:17 |WARN  |main |URLConfigurationSource.java:121 |com.netflix.config.sources.URLConfigurationSource |No URLs will be polled as dynamic configuration sources.
+2021-01-16 11:45:17 |WARN  |main |URLConfigurationSource.java:121 |com.netflix.config.sources.URLConfigurationSource |No URLs will be polled as dynamic configuration sources.
+2021-01-16 11:45:46 |WARN  |main |NacosPropertySourceBuilder.java:87 |com.alibaba.cloud.nacos.client.NacosPropertySourceBuilder |Ignore the empty nacos configuration and get it based on dataId[infrastructure-apigateway] & group[DEFAULT_GROUP]
+2021-01-16 11:45:46 |WARN  |main |NacosPropertySourceBuilder.java:87 |com.alibaba.cloud.nacos.client.NacosPropertySourceBuilder |Ignore the empty nacos configuration and get it based on dataId[infrastructure-apigateway-dev.yaml] & group[DEFAULT_GROUP]
+2021-01-16 11:45:47 |WARN  |main |URLConfigurationSource.java:121 |com.netflix.config.sources.URLConfigurationSource |No URLs will be polled as dynamic configuration sources.
+2021-01-16 11:45:47 |WARN  |main |URLConfigurationSource.java:121 |com.netflix.config.sources.URLConfigurationSource |No URLs will be polled as dynamic configuration sources.
+2021-01-16 11:46:20 |WARN  |main |NacosPropertySourceBuilder.java:87 |com.alibaba.cloud.nacos.client.NacosPropertySourceBuilder |Ignore the empty nacos configuration and get it based on dataId[infrastructure-apigateway] & group[DEFAULT_GROUP]
+2021-01-16 11:46:20 |WARN  |main |NacosPropertySourceBuilder.java:87 |com.alibaba.cloud.nacos.client.NacosPropertySourceBuilder |Ignore the empty nacos configuration and get it based on dataId[infrastructure-apigateway-dev.yaml] & group[DEFAULT_GROUP]
+2021-01-16 11:46:20 |WARN  |main |URLConfigurationSource.java:121 |com.netflix.config.sources.URLConfigurationSource |No URLs will be polled as dynamic configuration sources.
+2021-01-16 11:46:20 |WARN  |main |URLConfigurationSource.java:121 |com.netflix.config.sources.URLConfigurationSource |No URLs will be polled as dynamic configuration sources.

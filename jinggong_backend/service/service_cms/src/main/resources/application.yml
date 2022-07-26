@@ -1,0 +1,55 @@
+server:
+  port: 8140 # 服务端口
+
+spring:
+  profiles:
+    active: dev # 环境设置
+  application:
+    name: service-cms # 服务名
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 39.102.46.244:8848 # nacos服务地址
+        ip: 39.102.36.248
+        port: 8140
+    sentinel:
+      transport:
+        port: 8859 #跟控制台交流的端口，随意指定一个未使用的端口即可
+        dashboard: 39.102.46.244:8858 # 指定控制台服务的地址
+  redis:
+    host: 39.102.36.248
+    port: 6379
+    database: 0
+    password: 123456
+    lettuce:
+      pool:
+        max-active: 20  #最大连接数，负值表示没有限制，默认8
+        max-wait: -1    #最大阻塞等待时间，负值表示没限制，默认-1
+        max-idle: 8     #最大空闲连接，默认8
+        min-idle: 0     #最小空闲连接，默认0
+
+  datasource: # mysql数据库连接
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://39.102.36.248:3306/jinggong_cms?serverTimezone=GMT%2B8&useUnicode=true&characterEncoding=UTF-8
+    username: root
+    password: 123456
+
+  main: # 存在一个以上的Feign接口指向同一个微服务
+    allow-bean-definition-overriding: true
+
+  jackson: #返回json的全局时间格式
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: GMT+8
+
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl #mybatis日志
+  mapper-locations: classpath:com/bit/jinggong/service/cms/mapper/xml/*.xml
+
+ribbon:
+  ConnectTimeout: 10000 #连接建立的超时时长，默认1秒
+  ReadTimeout: 10000 #处理请求的超时时间，默认为1秒
+
+feign:
+  sentinel:
+    enabled: true

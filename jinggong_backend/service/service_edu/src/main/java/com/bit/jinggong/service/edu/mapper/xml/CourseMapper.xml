@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.bit.jinggong.service.edu.mapper.CourseMapper">
+
+        <sql id="columns">
+            c.id,
+            c.title,
+            c.lesson_num AS lessonNum,
+            CONVERT(c.price, DECIMAL(8,2)) AS price,
+            c.cover,
+            c.buy_count AS buyCount,
+            c.view_count AS viewCount,
+            c.status,
+            c.gmt_create AS gmtCreate,
+            t.name AS teacherName,
+            s1.title AS subjectParentTitle,
+            s2.title AS subjectTitle
+        </sql>
+        <sql id="tables">
+            edu_course c
+            LEFT JOIN edu_teacher t ON c.teacher_id = t.id
+            LEFT JOIN edu_subject s1 ON c.subject_parent_id = s1.id
+            LEFT JOIN edu_subject s2 ON c.subject_id = s2.id
+        </sql>
+        <select id="selectPageByCourseQueryVo" resultType="com.bit.jinggong.service.edu.entity.vo.CourseVo">
+            SELECT
+                <include refid="columns"></include>
+            FROM
+                <include refid="tables"></include>
+            ${ew.customSqlSegment}
+        </select>
+
+    <select id="selectCoursePublishVoById" resultType="com.bit.jinggong.service.edu.entity.vo.CoursePublishVo">
+        SELECT
+            c.id,
+            c.title,
+            c.cover,
+            c.lesson_num AS lessonNum,
+            CONVERT(c.price, DECIMAL(8,2)) AS price,
+            t.name AS teacherName,
+            s1.title AS subjectParentTitle,
+            s2.title AS subjectTitle
+        FROM
+            <include refid="tables" />
+        WHERE c.id = #{id}
+    </select>
+
+    <select id="selectWebCourseVoById" resultType="com.bit.jinggong.service.edu.entity.vo.WebCourseVo">
+        SELECT
+            c.id,
+            c.title,
+            c.cover,
+            CONVERT(c.price, DECIMAL(8,2)) AS price,
+            c.lesson_num AS lessonNum,
+            c.buy_count AS buyCount,
+            c.view_count AS viewCount,
+            cd.description,
+
+            t.id AS teacherId,
+            t.name AS teacherName,
+            t.intro,
+            t.avatar,
+
+            s1.id AS subjectLevelOneId,
+            s1.title AS subjectLevelOne,
+            s2.id AS subjectLevelTwoId,
+            s2.title AS subjectLevelTwo
+
+        FROM
+            edu_course c
+                LEFT JOIN edu_course_description cd ON c.id = cd.id
+                LEFT JOIN edu_teacher t ON c.teacher_id = t.id
+                LEFT JOIN edu_subject s1 ON c.subject_parent_id = s1.id
+                LEFT JOIN edu_subject s2 ON c.subject_id = s2.id
+        WHERE
+            c.id = #{id}
+    </select>
+
+    <select id="selectCourseDtoById" resultType="com.bit.jinggong.service.base.dto.CourseDto">
+        SELECT
+            c.id,
+            c.title,
+            CONVERT(c.price, DECIMAL(8,2)) AS price,
+            c.cover,
+            t.name AS teacherName
+
+        FROM edu_course c
+                 LEFT JOIN edu_teacher t ON c.teacher_id = t.id
+
+        WHERE
+            c.id = #{id}
+    </select>
+</mapper>

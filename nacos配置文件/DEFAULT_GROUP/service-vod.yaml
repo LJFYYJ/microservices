@@ -1,0 +1,24 @@
+server:
+  port: 8130 # 服务端口
+
+spring:
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 39.102.46.244:8848 # nacos服务地址
+        ip: 8.131.54.86
+        port: 8130
+    sentinel:
+      transport:
+        port: 8859 #跟控制台交流的端口，随意指定一个未使用的端口即可
+        dashboard: 39.102.46.244:8858 # 指定控制台服务的地址
+  servlet:
+    multipart:
+      max-file-size: 1024MB # 最大上传单个文件大小：默认1M
+      max-request-size: 1024MB # 最大置总上传的数据大小 ：默认10M
+
+aliyun:
+  vod:
+    keyid: sddfsdfsdfdfsdf
+    keysecret: sddfsdfsdfdfsdf
+    templateGroupId: 9b87cbdd0d215755b4ac50049f99dc48 #转码模板组id
